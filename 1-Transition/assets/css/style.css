@@ -1,0 +1,51 @@
+.transition{
+    background-color: teal;
+    padding: 20px;
+    margin: 20px;
+    /* transition: 2000ms; */
+    /* transition: 2s; */
+        /* transition: calc(1s+1s); */
+          /* transition: calc 2s; */
+          transition: background-color 5s;
+    
+}
+.transition:hover{
+    background-color: grey;
+    color: #fff;
+}
+/* BGCLIP */
+.bgClip{
+    background-color: #fb6350;
+    padding: 30px;
+    text-align: justify;
+    border: #e95740;
+    transition: 2s;
+    /* background-clip: content-box;
+    background-clip:padding-box; */
+    background-clip: border-box;
+}
+.bgClip:hover{
+    text-align: center;
+    border-radius: 50%;
+}
+.common{
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    background-color: crimson;
+    color: #fff;
+    transition: width 2s;
+
+}
+.common:hover{
+    width: 100px;
+    background-color: gold;
+}
+#d1 { transition-timing-function: linear;} /* cubic-bezier(0,0,1,1) */
+#d2 { transition-timing-function: ease-in;} /* cubic-bezier(0,42,1,1) */
+#d3 { transition-timing-function: ease-out;} /* cubic-bezier(0,0,58,1) */
+#d4 { transition-timing-function: ease;} /* cubic-bezier(0,25,0.1,0.25,1) */
+#d5 { transition-timing-function: ease-in-out;} /* cubic-bezier(0.42,0,0.58,1) */
+#d6 { transition-timing-function: step(6,jump-start); /* jump-start,jump-end,start,end,jump-both,jump-none */} 
+
+#d7 { transition-timing-function: cubic-bezier(0,5,0.7,0.8,0.1)} 
